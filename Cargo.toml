@@ -1,0 +1,14 @@
+[package]
+name = "now-playing-role-discord-bot"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dotenv = "0.15.0"
+regex = "1.8.4"
+serde = { version = "1.0.164", features = ["derive"] }
+serde_json = "1.0.97"
+serenity = { version = "0.11.5", default-features = false, features = ["client", "gateway", "rustls_backend", "model", "cache", "http"] }
+tokio = { version = "1.28.2", features = ["full"] }
